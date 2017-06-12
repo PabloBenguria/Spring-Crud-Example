@@ -1,0 +1,71 @@
+package com.udemy.appbackendninja.model;
+
+public class ContactModel {
+
+	private int id;
+	private String firstname;
+	private String lastname;
+	private String telephone;
+	private String city;
+
+	// Constructores
+	public ContactModel(){}
+
+	public ContactModel(int id, String firstname, String lastname, String telephone, String city) {
+		super();
+		this.id = id;
+		this.firstname = firstname;
+		this.lastname = lastname;
+		this.telephone = telephone;
+		this.city = city;
+	}
+
+	//Getters
+	public int getId() {
+		return id;
+	}
+
+	public String getFirstname() {
+		return firstname;
+	}
+
+	public String getLastname() {
+		return lastname;
+	}
+
+	public String getTelephone() {
+		return telephone;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	//Setters
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
+	}
+
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
+	}
+
+	public void setTelephone(String telephone) {
+		this.telephone = telephone;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	@Override
+	public String toString() {
+		return "ContactModel [id=" + id + ", firstname=" + firstname + ", lastname=" + lastname + ", telephone="
+				+ telephone + ", city=" + city + "]";
+	}
+
+}
